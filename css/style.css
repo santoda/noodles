@@ -1,0 +1,110 @@
+body{
+	background-color:#bc1100;
+	margin:0;
+	padding:0;
+	overflow:visible;
+}
+header, footer, #main{
+	width:100%;
+}
+#share-buttons{
+	position:fixed;
+	bottom:0;
+	left:50%;
+	margin-left:250px;
+}
+#share-buttons img {
+	width: 35px;
+	padding: 5px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+}
+#share-buttons img:hover{
+	opacity:0.5;
+}
+.utama{
+	text-align:center;
+	width:100%;
+	margin:auto;
+}
+.utama, .launch, #left, #right, .rasakan, .info, .kontak, footer p{
+	color:#FFF;
+	font-family:'Arial Unicode MS';
+}
+.launch{
+	font-size: 23px;
+    font-weight: bold;
+    margin-left: 2px;
+    margin-top: 41px;
+    text-align: center;
+    transform: rotate(15deg);
+}
+.utama{	font-size:60px; padding-top:20px;}
+.kontak{ font-size:20px; word-spacing:-10px; text-align:center; padding-top:10px;}
+.rasakan{
+	font-size:30px;
+	text-align:center;
+	font-weight:bold;
+	transform:rotate(-8deg);
+	padding-bottom:80px
+}
+#circle { 
+  	height: 140px;
+    margin: -70px 0 0 290px;
+    position: absolute;
+    left: 50%;
+    width: 140px;
+   	background:url(../img/circle.png) no-repeat;
+	border: 3px solid #FFFFFF;
+    border-radius: 75px 75px 75px 75px;
+}
+#left, #content{
+	float:left;
+	width:33%;
+}
+#right{
+	float:right; 
+	width:33%;
+}
+#left p, #right p{ height:166px}
+section h2{ text-align:center; color:#C5A05E;}
+.clear{clear:both}
+#content{
+	background:url(../img/cup.png) no-repeat;
+	height:357px;
+}
+#core{
+	width:50%;
+	margin:auto;
+	padding-top:80px;
+}
+.info{
+	font-size:20px;
+	text-align:center;
+	height: 30px; 
+	background: #ce3d32;
+	padding:20px;
+}
+#triangle-down { 
+	width: 0; 
+	height: 0; 
+	border-left: 50px solid transparent; 
+	border-right: 50px solid transparent; 
+	border-top: 50px solid #ce3d32; 
+	margin:auto;
+}
+footer p{ text-align:center; padding-top:100px; bottom:0;}
+@media screen and (max-width: 360px) {
+	#left, #right, #content{
+		float:none;
+		width:100%;
+	}
+	.info{
+		width:100%;
+		font-size:16px;
+	}
+	#triangle-down{
+		margin:auto 32%;
+	}
+}
